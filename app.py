@@ -21,6 +21,7 @@ app = Dash(
     external_stylesheets=[dbc.themes.BOOTSTRAP],
 )
 
+server = app.server
 
 df = pd.read_csv("ura-market-snapshots.csv", thousands=",")
 # Update 'Malekula' location to use more accurate location name to match later reports
