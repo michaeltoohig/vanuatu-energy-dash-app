@@ -1,0 +1,826 @@
+date,location,source,kwh
+2020-07,Port Vila,diesel,3559936.6863
+2020-07,Port Vila,copra oil,0.0
+2020-07,Port Vila,hydro,0.0
+2020-07,Port Vila,wind,585812.3661000001
+2020-07,Port Vila,solar,228812.44770000002
+2020-07,Luganville,diesel,108055.7049
+2020-07,Luganville,copra oil,0.0
+2020-07,Luganville,hydro,766400.0575
+2020-07,Luganville,wind,0.0
+2020-07,Luganville,solar,2591.9069
+2020-07,Malekula,diesel,
+2020-07,Malekula,copra oil,
+2020-07,Malekula,hydro,
+2020-07,Malekula,wind,
+2020-07,Malekula,solar,
+2020-07,Tanna,diesel,
+2020-07,Tanna,copra oil,
+2020-07,Tanna,hydro,
+2020-07,Tanna,wind,
+2020-07,Tanna,solar,
+2020-05,Port Vila,diesel,3673067.3198000006
+2020-05,Port Vila,copra oil,439161.0537
+2020-05,Port Vila,hydro,0.0
+2020-05,Port Vila,wind,248904.10929999998
+2020-05,Port Vila,solar,256292.7285
+2020-05,Luganville,diesel,99664.84499999999
+2020-05,Luganville,copra oil,0.0
+2020-05,Luganville,hydro,663896.4675
+2020-05,Luganville,wind,0.0
+2020-05,Luganville,solar,1913.6875
+2020-05,Malekula,diesel,95363.9024
+2020-05,Malekula,copra oil,0.0
+2020-05,Malekula,hydro,0.0
+2020-05,Malekula,wind,0.0
+2020-05,Malekula,solar,2185.0976000000005
+2020-05,Tanna,diesel,112354.5088
+2020-05,Tanna,copra oil,0.0
+2020-05,Tanna,hydro,0.0
+2020-05,Tanna,wind,0.0
+2020-05,Tanna,solar,3141.4912000000004
+2020-10,Port Vila,diesel,4045420.1540000006
+2020-10,Port Vila,copra oil,0.0
+2020-10,Port Vila,hydro,0.0
+2020-10,Port Vila,wind,454989.65390000003
+2020-10,Port Vila,solar,304127.1921
+2020-10,Luganville,diesel,211471.5042
+2020-10,Luganville,copra oil,0.0
+2020-10,Luganville,hydro,751623.9291
+2020-10,Luganville,wind,0.0
+2020-10,Luganville,solar,3461.8814999999995
+2020-10,Malekula,diesel,82349.0352
+2020-10,Malekula,copra oil,0.0
+2020-10,Malekula,hydro,0.0
+2020-10,Malekula,wind,0.0
+2020-10,Malekula,solar,2232.9648
+2020-10,Tanna,diesel,119438.2408
+2020-10,Tanna,copra oil,0.0
+2020-10,Tanna,hydro,0.0
+2020-10,Tanna,wind,0.0
+2020-10,Tanna,solar,3833.7592
+2020-02,Port Vila,diesel,5175547.2126
+2020-02,Port Vila,copra oil,154314.00960000002
+2020-02,Port Vila,hydro,0.0
+2020-02,Port Vila,wind,392415.7041
+2020-02,Port Vila,solar,305614.0737
+2020-02,Luganville,diesel,337839.5248
+2020-02,Luganville,copra oil,0.0
+2020-02,Luganville,hydro,684299.4992000001
+2020-02,Luganville,wind,0.0
+2020-02,Luganville,solar,4207.600399999999
+2020-02,Malekula,diesel,88997.5296
+2020-02,Malekula,copra oil,0.0
+2020-02,Malekula,hydro,0.0
+2020-02,Malekula,wind,0.0
+2020-02,Malekula,solar,2394.4704
+2020-02,Tanna,diesel,116297.856
+2020-02,Tanna,copra oil,0.0
+2020-02,Tanna,hydro,0.0
+2020-02,Tanna,wind,0.0
+2020-02,Tanna,solar,3350.144
+2022-03,Port Vila,diesel,4835040.4725
+2022-03,Port Vila,copra oil,0.0
+2022-03,Port Vila,hydro,0.0
+2022-03,Port Vila,wind,105672.84
+2022-03,Port Vila,solar,139203.645
+2022-03,Luganville,diesel,222559.25069999998
+2022-03,Luganville,copra oil,0.0
+2022-03,Luganville,hydro,780020.0750999999
+2022-03,Luganville,wind,0.0
+2022-03,Luganville,solar,3542.3254999999995
+2022-03,Malekula- Lakatoro,diesel,109657.91459999999
+2022-03,Malekula- Lakatoro,copra oil,0.0
+2022-03,Malekula- Lakatoro,hydro,0.0
+2022-03,Malekula- Lakatoro,wind,0.0
+2022-03,Malekula- Lakatoro,solar,2215.0854
+2022-03,Tanna,diesel,131617.2784
+2022-03,Tanna,copra oil,0.0
+2022-03,Tanna,hydro,0.0
+2022-03,Tanna,wind,0.0
+2022-03,Tanna,solar,2850.7216
+2022-03,Ambae,diesel,12112.208900000001
+2022-03,Ambae,copra oil,558.7911
+2022-03,Ambae,hydro,0.0
+2022-03,Ambae,wind,0.0
+2022-03,Ambae,solar,0.0
+2022-03,Sola,diesel,5102.0
+2022-03,Sola,copra oil,0.0
+2022-03,Sola,hydro,0.0
+2022-03,Sola,wind,0.0
+2022-03,Sola,solar,0.0
+2022-03,Maewo,diesel,0.0
+2022-03,Maewo,copra oil,0.0
+2022-03,Maewo,hydro,4621.0
+2022-03,Maewo,wind,0.0
+2022-03,Maewo,solar,0.0
+2022-03,Malekula - Lorlow & Wintua,diesel,
+2022-03,Malekula - Lorlow & Wintua,copra oil,
+2022-03,Malekula - Lorlow & Wintua,hydro,
+2022-03,Malekula - Lorlow & Wintua,wind,
+2022-03,Malekula - Lorlow & Wintua,solar,
+2022-03,Port Olry,diesel,14375.0
+2022-03,Port Olry,copra oil,0.0
+2022-03,Port Olry,hydro,0.0
+2022-03,Port Olry,wind,0.0
+2022-03,Port Olry,solar,0.0
+2020-01,Port Vila,diesel,5267263.1732
+2020-01,Port Vila,copra oil,72496.7404
+2020-01,Port Vila,hydro,0.0
+2020-01,Port Vila,wind,584348.7265
+2020-01,Port Vila,solar,325610.3599
+2020-01,Luganville,diesel,444284.2023
+2020-01,Luganville,copra oil,0.0
+2020-01,Luganville,hydro,620157.8427
+2020-01,Luganville,wind,0.0
+2020-01,Luganville,solar,5348.955
+2020-01,Malekula,diesel,93980.6296
+2020-01,Malekula,copra oil,0.0
+2020-01,Malekula,hydro,0.0
+2020-01,Malekula,wind,0.0
+2020-01,Malekula,solar,2687.3704
+2020-01,Tanna,diesel,118963.40139999999
+2020-01,Tanna,copra oil,0.0
+2020-01,Tanna,hydro,0.0
+2020-01,Tanna,wind,0.0
+2020-01,Tanna,solar,3894.5986
+2021-03,Port Vila,diesel,4756714.538799999
+2021-03,Port Vila,copra oil,0.0
+2021-03,Port Vila,hydro,0.0
+2021-03,Port Vila,wind,270993.46119999996
+2021-03,Port Vila,solar,0.0
+2021-03,Luganville,diesel,267643.61
+2021-03,Luganville,copra oil,0.0
+2021-03,Luganville,hydro,777747.0414999999
+2021-03,Luganville,wind,0.0
+2021-03,Luganville,solar,2739.6589999999997
+2021-03,Malekula- Lakatoro,diesel,109657.91459999999
+2021-03,Malekula- Lakatoro,copra oil,0.0
+2021-03,Malekula- Lakatoro,hydro,0.0
+2021-03,Malekula- Lakatoro,wind,0.0
+2021-03,Malekula- Lakatoro,solar,2215.0854
+2021-03,Tanna,diesel,131617.2784
+2021-03,Tanna,copra oil,0.0
+2021-03,Tanna,hydro,0.0
+2021-03,Tanna,wind,0.0
+2021-03,Tanna,solar,2850.7216
+2021-03,Ambae,diesel,7879.0
+2021-03,Ambae,copra oil,0.0
+2021-03,Ambae,hydro,0.0
+2021-03,Ambae,wind,0.0
+2021-03,Ambae,solar,0.0
+2021-03,Sola,diesel,3601.0
+2021-03,Sola,copra oil,0.0
+2021-03,Sola,hydro,0.0
+2021-03,Sola,wind,0.0
+2021-03,Sola,solar,0.0
+2021-03,Maewo,diesel,0.0
+2021-03,Maewo,copra oil,0.0
+2021-03,Maewo,hydro,3503.0
+2021-03,Maewo,wind,0.0
+2021-03,Maewo,solar,0.0
+2021-03,Malekula - Lorlow & Wintua,diesel,0.0
+2021-03,Malekula - Lorlow & Wintua,copra oil,0.0
+2021-03,Malekula - Lorlow & Wintua,hydro,0.0
+2021-03,Malekula - Lorlow & Wintua,wind,0.0
+2021-03,Malekula - Lorlow & Wintua,solar,2224.0
+2021-03,Port Olry,diesel,17586.0
+2021-03,Port Olry,copra oil,0.0
+2021-03,Port Olry,hydro,0.0
+2021-03,Port Olry,wind,0.0
+2021-03,Port Olry,solar,0.0
+2020-09,Port Vila,diesel,3463024.1679000002
+2020-09,Port Vila,copra oil,0.0
+2020-09,Port Vila,hydro,0.0
+2020-09,Port Vila,wind,749773.3617
+2020-09,Port Vila,solar,295310.6145
+2020-09,Luganville,diesel,160850.66340000002
+2020-09,Luganville,copra oil,0.0
+2020-09,Luganville,hydro,739562.3732
+2020-09,Luganville,wind,0.0
+2020-09,Luganville,solar,3137.6492000000003
+2020-09,Malekula,diesel,87354.7608
+2020-09,Malekula,copra oil,0.0
+2020-09,Malekula,hydro,0.0
+2020-09,Malekula,wind,0.0
+2020-09,Malekula,solar,2157.2392
+2020-09,Tanna,diesel,127116.0189
+2020-09,Tanna,copra oil,0.0
+2020-09,Tanna,hydro,0.0
+2020-09,Tanna,wind,0.0
+2020-09,Tanna,solar,3782.9811000000004
+2022-01,Port Vila,diesel,5165475.9902
+2022-01,Port Vila,copra oil,0.0
+2022-01,Port Vila,hydro,0.0
+2022-01,Port Vila,wind,138983.88019999999
+2022-01,Port Vila,solar,188974.1296
+2022-01,Luganville,diesel,298030.3284
+2022-01,Luganville,copra oil,0.0
+2022-01,Luganville,hydro,779766.0276
+2022-01,Luganville,wind,0.0
+2022-01,Luganville,solar,3490.8384
+2022-01,Malekula- Lakatoro,diesel,99471.2556
+2022-01,Malekula- Lakatoro,copra oil,0.0
+2022-01,Malekula- Lakatoro,hydro,0.0
+2022-01,Malekula- Lakatoro,wind,0.0
+2022-01,Malekula- Lakatoro,solar,2050.7444
+2022-01,Tanna,diesel,122570.22869999999
+2022-01,Tanna,copra oil,0.0
+2022-01,Tanna,hydro,0.0
+2022-01,Tanna,wind,0.0
+2022-01,Tanna,solar,2718.7713
+2022-01,Ambae,diesel,14565.5125
+2022-01,Ambae,copra oil,585.6471
+2022-01,Ambae,hydro,0.0
+2022-01,Ambae,wind,0.0
+2022-01,Ambae,solar,0.0
+2022-01,Sola,diesel,5024.0
+2022-01,Sola,copra oil,0.0
+2022-01,Sola,hydro,0.0
+2022-01,Sola,wind,0.0
+2022-01,Sola,solar,0.0
+2022-01,Maewo,diesel,0.0
+2022-01,Maewo,copra oil,0.0
+2022-01,Maewo,hydro,5969.0
+2022-01,Maewo,wind,0.0
+2022-01,Maewo,solar,0.0
+2022-01,Malekula - Lorlow & Wintua,diesel,0.0
+2022-01,Malekula - Lorlow & Wintua,copra oil,0.0
+2022-01,Malekula - Lorlow & Wintua,hydro,0.0
+2022-01,Malekula - Lorlow & Wintua,wind,0.0
+2022-01,Malekula - Lorlow & Wintua,solar,3277.0
+2022-01,Port Olry,diesel,18267.0
+2022-01,Port Olry,copra oil,0.0
+2022-01,Port Olry,hydro,0.0
+2022-01,Port Olry,wind,0.0
+2022-01,Port Olry,solar,0.0
+2021-09,Port Vila,diesel,3150256.8284
+2021-09,Port Vila,copra oil,0.0
+2021-09,Port Vila,hydro,0.0
+2021-09,Port Vila,wind,703435.4624000001
+2021-09,Port Vila,solar,254748.824
+2021-09,Luganville,diesel,352248.32639999996
+2021-09,Luganville,copra oil,0.0
+2021-09,Luganville,hydro,604171.5401
+2021-09,Luganville,wind,0.0
+2021-09,Luganville,solar,2703.6604
+2021-09,Malekula- Lakatoro,diesel,87354.7608
+2021-09,Malekula- Lakatoro,copra oil,0.0
+2021-09,Malekula- Lakatoro,hydro,0.0
+2021-09,Malekula- Lakatoro,wind,0.0
+2021-09,Malekula- Lakatoro,solar,2157.2392
+2021-09,Tanna,diesel,127116.0189
+2021-09,Tanna,copra oil,0.0
+2021-09,Tanna,hydro,0.0
+2021-09,Tanna,wind,0.0
+2021-09,Tanna,solar,3782.9811000000004
+2021-09,Ambae,diesel,11832.0
+2021-09,Ambae,copra oil,0.0
+2021-09,Ambae,hydro,0.0
+2021-09,Ambae,wind,0.0
+2021-09,Ambae,solar,0.0
+2021-09,Sola,diesel,4490.0
+2021-09,Sola,copra oil,0.0
+2021-09,Sola,hydro,0.0
+2021-09,Sola,wind,0.0
+2021-09,Sola,solar,0.0
+2021-09,Maewo,diesel,0.0
+2021-09,Maewo,copra oil,0.0
+2021-09,Maewo,hydro,4664.0
+2021-09,Maewo,wind,0.0
+2021-09,Maewo,solar,0.0
+2021-09,Malekula - Lorlow & Wintua,diesel,
+2021-09,Malekula - Lorlow & Wintua,copra oil,
+2021-09,Malekula - Lorlow & Wintua,hydro,
+2021-09,Malekula - Lorlow & Wintua,wind,
+2021-09,Malekula - Lorlow & Wintua,solar,
+2021-09,Port Olry,diesel,15398.0
+2021-09,Port Olry,copra oil,0.0
+2021-09,Port Olry,hydro,0.0
+2021-09,Port Olry,wind,0.0
+2021-09,Port Olry,solar,0.0
+2021-08,Port Vila,diesel,3814338.3480999996
+2021-08,Port Vila,copra oil,0.0
+2021-08,Port Vila,hydro,0.0
+2021-08,Port Vila,wind,689050.9955
+2021-08,Port Vila,solar,265129.6564
+2021-08,Luganville,diesel,279705.7775
+2021-08,Luganville,copra oil,0.0
+2021-08,Luganville,hydro,690692.0249999999
+2021-08,Luganville,wind,0.0
+2021-08,Luganville,solar,2743.1740000000004
+2021-08,Malekula- Lakatoro,diesel,85660.51779999999
+2021-08,Malekula- Lakatoro,copra oil,0.0
+2021-08,Malekula- Lakatoro,hydro,0.0
+2021-08,Malekula- Lakatoro,wind,0.0
+2021-08,Malekula- Lakatoro,solar,2232.4822
+2021-08,Tanna,diesel,117680.2326
+2021-08,Tanna,copra oil,0.0
+2021-08,Tanna,hydro,0.0
+2021-08,Tanna,wind,0.0
+2021-08,Tanna,solar,3153.7673999999997
+2021-08,Ambae,diesel,10179.0
+2021-08,Ambae,copra oil,0.0
+2021-08,Ambae,hydro,0.0
+2021-08,Ambae,wind,0.0
+2021-08,Ambae,solar,0.0
+2021-08,Sola,diesel,4901.0
+2021-08,Sola,copra oil,0.0
+2021-08,Sola,hydro,0.0
+2021-08,Sola,wind,0.0
+2021-08,Sola,solar,0.0
+2021-08,Maewo,diesel,0.0
+2021-08,Maewo,copra oil,0.0
+2021-08,Maewo,hydro,4446.0
+2021-08,Maewo,wind,0.0
+2021-08,Maewo,solar,0.0
+2021-08,Malekula - Lorlow & Wintua,diesel,0.0
+2021-08,Malekula - Lorlow & Wintua,copra oil,0.0
+2021-08,Malekula - Lorlow & Wintua,hydro,0.0
+2021-08,Malekula - Lorlow & Wintua,wind,0.0
+2021-08,Malekula - Lorlow & Wintua,solar,1935.0
+2021-08,Port Olry,diesel,17374.0
+2021-08,Port Olry,copra oil,0.0
+2021-08,Port Olry,hydro,0.0
+2021-08,Port Olry,wind,0.0
+2021-08,Port Olry,solar,0.0
+2020-06,Port Vila,diesel,3541302.141
+2020-06,Port Vila,copra oil,24429.131
+2020-06,Port Vila,hydro,0.0
+2020-06,Port Vila,wind,867003.6869999999
+2020-06,Port Vila,solar,176074.114
+2020-06,Luganville,diesel,142247.1114
+2020-06,Luganville,copra oil,0.0
+2020-06,Luganville,hydro,725186.5462
+2020-06,Luganville,wind,0.0
+2020-06,Luganville,solar,2207.435
+2020-06,Malekula,diesel,92321.919
+2020-06,Malekula,copra oil,0.0
+2020-06,Malekula,hydro,0.0
+2020-06,Malekula,wind,0.0
+2020-06,Malekula,solar,1836.081
+2020-06,Tanna,diesel,113831.0964
+2020-06,Tanna,copra oil,0.0
+2020-06,Tanna,hydro,0.0
+2020-06,Tanna,wind,0.0
+2020-06,Tanna,solar,2655.9035999999996
+2020-11,Port Vila,diesel,4273239.2678000005
+2020-11,Port Vila,copra oil,0.0
+2020-11,Port Vila,hydro,0.0
+2020-11,Port Vila,wind,307392.183
+2020-11,Port Vila,solar,298121.6251
+2020-11,Luganville,diesel,228809.77279999998
+2020-11,Luganville,copra oil,0.0
+2020-11,Luganville,hydro,726749.9456000001
+2020-11,Luganville,wind,0.0
+2020-11,Luganville,solar,3033.8336
+2020-11,Malekula,diesel,84921.0384
+2020-11,Malekula,copra oil,0.0
+2020-11,Malekula,hydro,0.0
+2020-11,Malekula,wind,0.0
+2020-11,Malekula,solar,2016.9615999999999
+2020-11,Tanna,diesel,130561.59899999999
+2020-11,Tanna,copra oil,0.0
+2020-11,Tanna,hydro,0.0
+2020-11,Tanna,wind,0.0
+2020-11,Tanna,solar,3733.401
+2021-01,Port Vila,diesel,4954429.084500001
+2021-01,Port Vila,copra oil,0.0
+2021-01,Port Vila,hydro,0.0
+2021-01,Port Vila,wind,182262.7737
+2021-01,Port Vila,solar,239253.49350000004
+2021-01,Luganville,diesel,237971.03759999998
+2021-01,Luganville,copra oil,0.0
+2021-01,Luganville,hydro,773794.3752
+2021-01,Luganville,wind,0.0
+2021-01,Luganville,solar,2693.6207999999997
+2021-01,Malekula,diesel,99471.2556
+2021-01,Malekula,copra oil,0.0
+2021-01,Malekula,hydro,0.0
+2021-01,Malekula,wind,0.0
+2021-01,Malekula,solar,2050.7444
+2021-01,Tanna,diesel,122570.22869999999
+2021-01,Tanna,copra oil,0.0
+2021-01,Tanna,hydro,0.0
+2021-01,Tanna,wind,0.0
+2021-01,Tanna,solar,2718.7713
+2021-07,Port Vila,diesel,3983287.8854999994
+2021-07,Port Vila,copra oil,0.0
+2021-07,Port Vila,hydro,0.0
+2021-07,Port Vila,wind,524178.963
+2021-07,Port Vila,solar,214866.1515
+2021-07,Luganville,diesel,353535.10679999995
+2021-07,Luganville,copra oil,0.0
+2021-07,Luganville,hydro,668682.8640000001
+2021-07,Luganville,wind,0.0
+2021-07,Luganville,solar,2786.1786
+2021-07,Malekula- Lakatoro,diesel,113428.6425
+2021-07,Malekula- Lakatoro,copra oil,0.0
+2021-07,Malekula- Lakatoro,hydro,0.0
+2021-07,Malekula- Lakatoro,wind,0.0
+2021-07,Malekula- Lakatoro,solar,2020.3575000000003
+2021-07,Tanna,diesel,134184.5944
+2021-07,Tanna,copra oil,0.0
+2021-07,Tanna,hydro,0.0
+2021-07,Tanna,wind,0.0
+2021-07,Tanna,solar,3412.4056
+2021-07,Ambae,diesel,9925.0
+2021-07,Ambae,copra oil,0.0
+2021-07,Ambae,hydro,0.0
+2021-07,Ambae,wind,0.0
+2021-07,Ambae,solar,0.0
+2021-07,Sola,diesel,4645.0
+2021-07,Sola,copra oil,0.0
+2021-07,Sola,hydro,0.0
+2021-07,Sola,wind,0.0
+2021-07,Sola,solar,0.0
+2021-07,Maewo,diesel,0.0
+2021-07,Maewo,copra oil,0.0
+2021-07,Maewo,hydro,4705.0
+2021-07,Maewo,wind,0.0
+2021-07,Maewo,solar,0.0
+2021-07,Malekula - Lorlow & Wintua,diesel,0.0
+2021-07,Malekula - Lorlow & Wintua,copra oil,0.0
+2021-07,Malekula - Lorlow & Wintua,hydro,0.0
+2021-07,Malekula - Lorlow & Wintua,wind,0.0
+2021-07,Malekula - Lorlow & Wintua,solar,2130.0
+2021-07,Port Olry,diesel,13589.0
+2021-07,Port Olry,copra oil,0.0
+2021-07,Port Olry,hydro,0.0
+2021-07,Port Olry,wind,0.0
+2021-07,Port Olry,solar,0.0
+2021-12,Port Vila,diesel,5338983.4358
+2021-12,Port Vila,copra oil,0.0
+2021-12,Port Vila,hydro,0.0
+2021-12,Port Vila,wind,122124.3696
+2021-12,Port Vila,solar,192232.804
+2021-12,Luganville,diesel,309410.81399999995
+2021-12,Luganville,copra oil,0.0
+2021-12,Luganville,hydro,802741.068
+2021-12,Luganville,wind,0.0
+2021-12,Luganville,solar,3027.942
+2021-12,Malekula- Lakatoro,diesel,100686.3042
+2021-12,Malekula- Lakatoro,copra oil,0.0
+2021-12,Malekula- Lakatoro,hydro,0.0
+2021-12,Malekula- Lakatoro,wind,0.0
+2021-12,Malekula- Lakatoro,solar,1824.6958
+2021-12,Tanna,diesel,132019.72
+2021-12,Tanna,copra oil,0.0
+2021-12,Tanna,hydro,0.0
+2021-12,Tanna,wind,0.0
+2021-12,Tanna,solar,2694.28
+2021-12,Ambae,diesel,11778.0
+2021-12,Ambae,copra oil,0.0
+2021-12,Ambae,hydro,0.0
+2021-12,Ambae,wind,0.0
+2021-12,Ambae,solar,0.0
+2021-12,Sola,diesel,4801.0
+2021-12,Sola,copra oil,0.0
+2021-12,Sola,hydro,0.0
+2021-12,Sola,wind,0.0
+2021-12,Sola,solar,0.0
+2021-12,Maewo,diesel,6287.0
+2021-12,Maewo,copra oil,0.0
+2021-12,Maewo,hydro,0.0
+2021-12,Maewo,wind,0.0
+2021-12,Maewo,solar,0.0
+2021-12,Malekula - Lorlow & Wintua,diesel,
+2021-12,Malekula - Lorlow & Wintua,copra oil,
+2021-12,Malekula - Lorlow & Wintua,hydro,
+2021-12,Malekula - Lorlow & Wintua,wind,
+2021-12,Malekula - Lorlow & Wintua,solar,
+2021-12,Port Olry,diesel,18420.0
+2021-12,Port Olry,copra oil,0.0
+2021-12,Port Olry,hydro,0.0
+2021-12,Port Olry,wind,0.0
+2021-12,Port Olry,solar,0.0
+2020-12,Port Vila,diesel,4674673.6568
+2020-12,Port Vila,copra oil,0.0
+2020-12,Port Vila,hydro,0.0
+2020-12,Port Vila,wind,315087.3362
+2020-12,Port Vila,solar,279258.007
+2020-12,Luganville,diesel,227517.984
+2020-12,Luganville,copra oil,0.0
+2020-12,Luganville,hydro,788770.624
+2020-12,Luganville,wind,0.0
+2020-12,Luganville,solar,3537.088
+2020-12,Malekula,diesel,100686.3042
+2020-12,Malekula,copra oil,0.0
+2020-12,Malekula,hydro,0.0
+2020-12,Malekula,wind,0.0
+2020-12,Malekula,solar,1824.6958
+2020-12,Tanna,diesel,132019.72
+2020-12,Tanna,copra oil,0.0
+2020-12,Tanna,hydro,0.0
+2020-12,Tanna,wind,0.0
+2020-12,Tanna,solar,2694.28
+2020-04,Port Vila,diesel,4179395.8584000007
+2020-04,Port Vila,copra oil,251700.3108
+2020-04,Port Vila,hydro,0.0
+2020-04,Port Vila,wind,237554.3631
+2020-04,Port Vila,solar,209262.4677
+2020-04,Luganville,diesel,119893.95000000001
+2020-04,Luganville,copra oil,0.0
+2020-04,Luganville,hydro,331721.676
+2020-04,Luganville,wind,0.0
+2020-04,Luganville,solar,814.374
+2020-04,Malekula,diesel,88298.7978
+2020-04,Malekula,copra oil,0.0
+2020-04,Malekula,hydro,0.0
+2020-04,Malekula,wind,0.0
+2020-04,Malekula,solar,1600.2022
+2020-04,Tanna,diesel,108305.84049999999
+2020-04,Tanna,copra oil,0.0
+2020-04,Tanna,hydro,0.0
+2020-04,Tanna,wind,0.0
+2020-04,Tanna,solar,2629.1595
+2021-04,Port Vila,diesel,4632540.1735
+2021-04,Port Vila,copra oil,0.0
+2021-04,Port Vila,hydro,0.0
+2021-04,Port Vila,wind,303570.8265
+2021-04,Port Vila,solar,0.0
+2021-04,Luganville,diesel,287763.7688
+2021-04,Luganville,copra oil,0.0
+2021-04,Luganville,hydro,739727.0368
+2021-04,Luganville,wind,0.0
+2021-04,Luganville,solar,3109.839
+2021-04,Malekula- Lakatoro,diesel,108632.313
+2021-04,Malekula- Lakatoro,copra oil,0.0
+2021-04,Malekula- Lakatoro,hydro,0.0
+2021-04,Malekula- Lakatoro,wind,0.0
+2021-04,Malekula- Lakatoro,solar,1878.6870000000001
+2021-04,Tanna,diesel,128645.03839999999
+2021-04,Tanna,copra oil,0.0
+2021-04,Tanna,hydro,0.0
+2021-04,Tanna,wind,0.0
+2021-04,Tanna,solar,2866.9616
+2021-04,Ambae,diesel,8056.0
+2021-04,Ambae,copra oil,0.0
+2021-04,Ambae,hydro,0.0
+2021-04,Ambae,wind,0.0
+2021-04,Ambae,solar,0.0
+2021-04,Sola,diesel,4089.0
+2021-04,Sola,copra oil,0.0
+2021-04,Sola,hydro,0.0
+2021-04,Sola,wind,0.0
+2021-04,Sola,solar,0.0
+2021-04,Maewo,diesel,0.0
+2021-04,Maewo,copra oil,0.0
+2021-04,Maewo,hydro,4216.0
+2021-04,Maewo,wind,0.0
+2021-04,Maewo,solar,0.0
+2021-04,Malekula - Lorlow & Wintua,diesel,0.0
+2021-04,Malekula - Lorlow & Wintua,copra oil,0.0
+2021-04,Malekula - Lorlow & Wintua,hydro,0.0
+2021-04,Malekula - Lorlow & Wintua,wind,0.0
+2021-04,Malekula - Lorlow & Wintua,solar,2512.0
+2021-04,Port Olry,diesel,15544.0
+2021-04,Port Olry,copra oil,0.0
+2021-04,Port Olry,hydro,0.0
+2021-04,Port Olry,wind,0.0
+2021-04,Port Olry,solar,0.0
+2021-06,Port Vila,diesel,3998167.3976999996
+2021-06,Port Vila,copra oil,0.0
+2021-06,Port Vila,hydro,0.0
+2021-06,Port Vila,wind,362174.4924
+2021-06,Port Vila,solar,235321.4976
+2021-06,Luganville,diesel,380090.91030000005
+2021-06,Luganville,copra oil,0.0
+2021-06,Luganville,hydro,594070.1995999999
+2021-06,Luganville,wind,0.0
+2021-06,Luganville,solar,2457.2725
+2021-06,Malekula- Lakatoro,diesel,110985.4294
+2021-06,Malekula- Lakatoro,copra oil,0.0
+2021-06,Malekula- Lakatoro,hydro,0.0
+2021-06,Malekula- Lakatoro,wind,0.0
+2021-06,Malekula- Lakatoro,solar,1827.5706000000002
+2021-06,Tanna,diesel,133845.13619999998
+2021-06,Tanna,copra oil,0.0
+2021-06,Tanna,hydro,0.0
+2021-06,Tanna,wind,0.0
+2021-06,Tanna,solar,2968.8638
+2021-06,Ambae,diesel,9106.0
+2021-06,Ambae,copra oil,0.0
+2021-06,Ambae,hydro,0.0
+2021-06,Ambae,wind,0.0
+2021-06,Ambae,solar,0.0
+2021-06,Sola,diesel,4671.0
+2021-06,Sola,copra oil,0.0
+2021-06,Sola,hydro,0.0
+2021-06,Sola,wind,0.0
+2021-06,Sola,solar,0.0
+2021-06,Maewo,diesel,0.0
+2021-06,Maewo,copra oil,0.0
+2021-06,Maewo,hydro,4831.0
+2021-06,Maewo,wind,0.0
+2021-06,Maewo,solar,0.0
+2021-06,Malekula - Lorlow & Wintua,diesel,0.0
+2021-06,Malekula - Lorlow & Wintua,copra oil,0.0
+2021-06,Malekula - Lorlow & Wintua,hydro,0.0
+2021-06,Malekula - Lorlow & Wintua,wind,0.0
+2021-06,Malekula - Lorlow & Wintua,solar,2087.0
+2021-06,Port Olry,diesel,14311.0
+2021-06,Port Olry,copra oil,0.0
+2021-06,Port Olry,hydro,0.0
+2021-06,Port Olry,wind,0.0
+2021-06,Port Olry,solar,0.0
+2021-02,Port Vila,diesel,4653950.2284
+2021-02,Port Vila,copra oil,0.0
+2021-02,Port Vila,hydro,0.0
+2021-02,Port Vila,wind,115752.22559999999
+2021-02,Port Vila,solar,306641.8608
+2021-02,Luganville,diesel,232483.0581
+2021-02,Luganville,copra oil,0.0
+2021-02,Luganville,hydro,717373.5567
+2021-02,Luganville,wind,0.0
+2021-02,Luganville,solar,3161.0799
+2021-02,Malekula- Lakatoro,diesel,109951.594
+2021-02,Malekula- Lakatoro,copra oil,0.0
+2021-02,Malekula- Lakatoro,hydro,0.0
+2021-02,Malekula- Lakatoro,wind,0.0
+2021-02,Malekula- Lakatoro,solar,2015.4060000000002
+2021-02,Tanna,diesel,135803.89990000002
+2021-02,Tanna,copra oil,0.0
+2021-02,Tanna,hydro,0.0
+2021-02,Tanna,wind,0.0
+2021-02,Tanna,solar,2729.1000999999997
+2021-02,Ambae,diesel,7203.0
+2021-02,Ambae,copra oil,0.0
+2021-02,Ambae,hydro,0.0
+2021-02,Ambae,wind,0.0
+2021-02,Ambae,solar,0.0
+2021-02,Sola,diesel,3435.0
+2021-02,Sola,copra oil,0.0
+2021-02,Sola,hydro,0.0
+2021-02,Sola,wind,0.0
+2021-02,Sola,solar,0.0
+2021-02,Maewo,diesel,0.0
+2021-02,Maewo,copra oil,0.0
+2021-02,Maewo,hydro,3271.0
+2021-02,Maewo,wind,0.0
+2021-02,Maewo,solar,0.0
+2021-02,Malekula - Lorlow & Wintua,diesel,0.0
+2021-02,Malekula - Lorlow & Wintua,copra oil,0.0
+2021-02,Malekula - Lorlow & Wintua,hydro,0.0
+2021-02,Malekula - Lorlow & Wintua,wind,0.0
+2021-02,Malekula - Lorlow & Wintua,solar,2224.0
+2021-02,Port Olry,diesel,17586.0
+2021-02,Port Olry,copra oil,0.0
+2021-02,Port Olry,hydro,0.0
+2021-02,Port Olry,wind,0.0
+2021-02,Port Olry,solar,0.0
+2020-03,Port Vila,diesel,5277064.774200001
+2020-03,Port Vila,copra oil,169449.8002
+2020-03,Port Vila,hydro,0.0
+2020-03,Port Vila,wind,341311.69720000005
+2020-03,Port Vila,solar,241812.70419999998
+2020-03,Luganville,diesel,355558.518
+2020-03,Luganville,copra oil,0.0
+2020-03,Luganville,hydro,744795.7154999999
+2020-03,Luganville,wind,0.0
+2020-03,Luganville,solar,3864.7664999999997
+2020-03,Malekula,diesel,96336.6336
+2020-03,Malekula,copra oil,0.0
+2020-03,Malekula,hydro,0.0
+2020-03,Malekula,wind,0.0
+2020-03,Malekula,solar,2046.3663999999999
+2020-03,Tanna,diesel,122388.84629999999
+2020-03,Tanna,copra oil,0.0
+2020-03,Tanna,hydro,0.0
+2020-03,Tanna,wind,0.0
+2020-03,Tanna,solar,3254.1537
+2021-10,Port Vila,diesel,4503477.5412
+2021-10,Port Vila,copra oil,0.0
+2021-10,Port Vila,hydro,0.0
+2021-10,Port Vila,wind,258355.29169999997
+2021-10,Port Vila,solar,235368.16710000002
+2021-10,Luganville,diesel,397166.06950000004
+2021-10,Luganville,copra oil,0.0
+2021-10,Luganville,hydro,616838.02
+2021-10,Luganville,wind,0.0
+2021-10,Luganville,solar,2655.263
+2021-10,Malekula- Lakatoro,diesel,82349.0352
+2021-10,Malekula- Lakatoro,copra oil,0.0
+2021-10,Malekula- Lakatoro,hydro,0.0
+2021-10,Malekula- Lakatoro,wind,0.0
+2021-10,Malekula- Lakatoro,solar,2232.9648
+2021-10,Tanna,diesel,119438.2408
+2021-10,Tanna,copra oil,0.0
+2021-10,Tanna,hydro,0.0
+2021-10,Tanna,wind,0.0
+2021-10,Tanna,solar,3833.7592
+2021-10,Ambae,diesel,11352.0
+2021-10,Ambae,copra oil,0.0
+2021-10,Ambae,hydro,0.0
+2021-10,Ambae,wind,0.0
+2021-10,Ambae,solar,0.0
+2021-10,Sola,diesel,4742.0
+2021-10,Sola,copra oil,0.0
+2021-10,Sola,hydro,0.0
+2021-10,Sola,wind,0.0
+2021-10,Sola,solar,0.0
+2021-10,Maewo,diesel,0.0
+2021-10,Maewo,copra oil,0.0
+2021-10,Maewo,hydro,5302.0
+2021-10,Maewo,wind,0.0
+2021-10,Maewo,solar,0.0
+2021-10,Malekula - Lorlow & Wintua,diesel,
+2021-10,Malekula - Lorlow & Wintua,copra oil,
+2021-10,Malekula - Lorlow & Wintua,hydro,
+2021-10,Malekula - Lorlow & Wintua,wind,
+2021-10,Malekula - Lorlow & Wintua,solar,
+2021-10,Port Olry,diesel,15979.0
+2021-10,Port Olry,copra oil,0.0
+2021-10,Port Olry,hydro,0.0
+2021-10,Port Olry,wind,0.0
+2021-10,Port Olry,solar,0.0
+2021-11,Port Vila,diesel,4692988.094500001
+2021-11,Port Vila,copra oil,0.0
+2021-11,Port Vila,hydro,0.0
+2021-11,Port Vila,wind,215213.2774
+2021-11,Port Vila,solar,240441.6281
+2021-11,Luganville,diesel,508066.092
+2021-11,Luganville,copra oil,0.0
+2021-11,Luganville,hydro,536923.9089999999
+2021-11,Luganville,wind,0.0
+2021-11,Luganville,solar,2948.9740000000006
+2021-11,Malekula- Lakatoro,diesel,84921.0384
+2021-11,Malekula- Lakatoro,copra oil,0.0
+2021-11,Malekula- Lakatoro,hydro,0.0
+2021-11,Malekula- Lakatoro,wind,0.0
+2021-11,Malekula- Lakatoro,solar,2016.9615999999999
+2021-11,Tanna,diesel,130561.59899999999
+2021-11,Tanna,copra oil,0.0
+2021-11,Tanna,hydro,0.0
+2021-11,Tanna,wind,0.0
+2021-11,Tanna,solar,3733.401
+2021-11,Ambae,diesel,11830.0
+2021-11,Ambae,copra oil,0.0
+2021-11,Ambae,hydro,0.0
+2021-11,Ambae,wind,0.0
+2021-11,Ambae,solar,0.0
+2021-11,Sola,diesel,5218.0
+2021-11,Sola,copra oil,0.0
+2021-11,Sola,hydro,0.0
+2021-11,Sola,wind,0.0
+2021-11,Sola,solar,0.0
+2021-11,Maewo,diesel,0.0
+2021-11,Maewo,copra oil,0.0
+2021-11,Maewo,hydro,6287.0
+2021-11,Maewo,wind,0.0
+2021-11,Maewo,solar,0.0
+2021-11,Malekula - Lorlow & Wintua,diesel,
+2021-11,Malekula - Lorlow & Wintua,copra oil,
+2021-11,Malekula - Lorlow & Wintua,hydro,
+2021-11,Malekula - Lorlow & Wintua,wind,
+2021-11,Malekula - Lorlow & Wintua,solar,
+2021-11,Port Olry,diesel,18927.0
+2021-11,Port Olry,copra oil,0.0
+2021-11,Port Olry,hydro,0.0
+2021-11,Port Olry,wind,0.0
+2021-11,Port Olry,solar,0.0
+2022-02,Port Vila,diesel,4683539.9243
+2022-02,Port Vila,copra oil,0.0
+2022-02,Port Vila,hydro,0.0
+2022-02,Port Vila,wind,144667.2453
+2022-02,Port Vila,solar,142678.6921
+2022-02,Luganville,diesel,253285.83200000002
+2022-02,Luganville,copra oil,0.0
+2022-02,Luganville,hydro,700340.1407999999
+2022-02,Luganville,wind,0.0
+2022-02,Luganville,solar,3563.3368
+2022-02,Malekula- Lakatoro,diesel,109951.594
+2022-02,Malekula- Lakatoro,copra oil,0.0
+2022-02,Malekula- Lakatoro,hydro,0.0
+2022-02,Malekula- Lakatoro,wind,0.0
+2022-02,Malekula- Lakatoro,solar,2015.4060000000002
+2022-02,Tanna,diesel,135803.89990000002
+2022-02,Tanna,copra oil,0.0
+2022-02,Tanna,hydro,0.0
+2022-02,Tanna,wind,0.0
+2022-02,Tanna,solar,2729.1000999999997
+2022-02,Ambae,diesel,10662.9543
+2022-02,Ambae,copra oil,420.0457
+2022-02,Ambae,hydro,0.0
+2022-02,Ambae,wind,0.0
+2022-02,Ambae,solar,0.0
+2022-02,Sola,diesel,5044.0
+2022-02,Sola,copra oil,0.0
+2022-02,Sola,hydro,0.0
+2022-02,Sola,wind,0.0
+2022-02,Sola,solar,0.0
+2022-02,Maewo,diesel,0.0
+2022-02,Maewo,copra oil,0.0
+2022-02,Maewo,hydro,5969.0
+2022-02,Maewo,wind,0.0
+2022-02,Maewo,solar,0.0
+2022-02,Malekula - Lorlow & Wintua,diesel,
+2022-02,Malekula - Lorlow & Wintua,copra oil,
+2022-02,Malekula - Lorlow & Wintua,hydro,
+2022-02,Malekula - Lorlow & Wintua,wind,
+2022-02,Malekula - Lorlow & Wintua,solar,
+2022-02,Port Olry,diesel,14232.0
+2022-02,Port Olry,copra oil,0.0
+2022-02,Port Olry,hydro,0.0
+2022-02,Port Olry,wind,0.0
+2022-02,Port Olry,solar,0.0
