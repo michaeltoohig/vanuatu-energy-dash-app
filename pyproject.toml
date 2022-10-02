@@ -1,22 +1,22 @@
 [tool.poetry]
-name = "test-dash"
+name = "vanuatu-energy-dash-app"
 version = "0.1.0"
-description = ""
+description = "A dashboard of Vanuatu's energy prices and sources built from publicly available data."
 authors = ["Michael Toohig <michael.toohig@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
-pandas = "^1.4.4"
 dash = "^2.6.1"
+dash-bootstrap-components = "^1.2.1"
+pandas = "^1.4.4"
+gunicorn = {version = "^20.1.0", optional = true}
+
+[tool.poetry.group.data-prep.dependencies]
+requests = "^2.28.1"
 PyPDF2 = "^2.10.5"
 beautifulsoup4 = "^4.11.1"
-requests = "^2.28.1"
 pdf2image = "^1.16.0"
-opencv-python-headless = "^4.6.0"
 camelot-py = {extras = ["cv"], version = "^0.10.1"}
-tabula-py = "^2.5.1"
-dash-bootstrap-components = "^1.2.1"
-gunicorn = "^20.1.0"
 
 [tool.poetry.dev-dependencies]
 black = {version = "^22.8.0", allow-prereleases = true}
