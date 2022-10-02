@@ -160,7 +160,7 @@ footer = html.Footer(
                 dbc.Col(
                     html.A(
                         "By Michael Toohig",
-                        style={"color": "white"},
+                        style={"color": "white", "text-decoration": "underline"},
                         href="https://michaeltoohig.github.io",
                     ),
                 ),
@@ -174,9 +174,8 @@ footer = html.Footer(
                                 className="ms-2 mt-1",
                             ),
                         ],
-                        className="d-flex flex-row justify-content-end",
+                        className="text-end d-flex flex-row justify-content-end",
                     ),
-                    className="text-end",
                 ),
                 # dbc.Col(
                 #     html.Div(
@@ -188,8 +187,8 @@ footer = html.Footer(
                 #     )
                 # ),
             ],
-            className="px-5",
-            justify="between",
+            className="mx-5",
+            justify="around",
         )
     ],
     className="bg-primary py-5 mt-5",
