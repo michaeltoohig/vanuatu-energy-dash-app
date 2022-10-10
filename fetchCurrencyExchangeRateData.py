@@ -9,24 +9,26 @@ import shutil
 import requests
 from bs4 import BeautifulSoup
 
-# BASE_URL = "https://www.exchangerates.org.uk"
+BASE_URL = "https://www.exchangerates.org.uk"
 
-# for year in ["2017", "2018", "2019", "2020", "2021", "2022"]:
-#     resp = requests.get(f"{BASE_URL}/VUV-USD-spot-exchange-rates-history-{year}.html")
-#     resp.raise_for_status()
-#     html = resp.text
-#     # soup = BeautifulSoup(html, "html.parser")
-#     with open(
-#         f"data/exchange-rates/vuv-usd-spot-exchange-rates-{year}.html", "w"
-#     ) as file:
-#         file.write(html)
+for year in ["2022"]:  #["2017", "2018", "2019", "2020", "2021", "2022"]:
+    resp = requests.get(f"{BASE_URL}/VUV-USD-spot-exchange-rates-history-{year}.html")
+    resp.raise_for_status()
+    html = resp.text
+    # soup = BeautifulSoup(html, "html.parser")
+    with open(
+        f"data/exchange-rates/vuv-usd-spot-exchange-rates-{year}.html", "w"
+    ) as file:
+        file.write(html)
 
 daily = csv.writer(
     Path("data/exchange-rates/daily.csv").open("w", newline=""), delimiter=","
 )
+daily.writerow(["date", "exchange_rate"])
 monthly = csv.writer(
     Path("data/exchange-rates/monthly.csv").open("w", newline=""), delimiter=","
 )
+monthly.writerow(["date", "exchange_rate"])
 
 for file in sorted(Path("data/exchange-rates").glob("*.html")):
     soup = BeautifulSoup(file.open("r").read(), "html.parser")
