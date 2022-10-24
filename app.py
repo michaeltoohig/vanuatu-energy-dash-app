@@ -96,22 +96,14 @@ fig2.add_trace(
 )
 
 
+unelco_rates["base_rate_diff"] = unelco_rates["base_rate"].diff()
+fig3 = px.bar(unelco_rates, x="date", y="base_rate_diff", title="Base Rate Change By Month")
+fig3.update_layout(xaxis_title="Date", yaxis_title="Rate Change (Vatu)")
+
+
 #
 ## LAYOUT
 #
-
-
-# search_bar = dbc.Row(
-#     [
-#         # dbc.Col(dbc.Input(type="search", placeholder="Search")),
-#         dbc.Col(
-#             dbc.Button("Search", color="primary", className="ms-2", n_clicks=0),
-#             width="auto",
-#         ),
-#     ],
-#     className="g-0 ms-auto flex-nowrap mt-3 mt-md-0",
-#     align="center",
-# )
 
 navbar = dbc.Navbar(
     dbc.Container(
@@ -139,13 +131,6 @@ navbar = dbc.Navbar(
                     ),
                 ]
             ),
-            # dbc.NavbarToggler(id="navbar-toggler", n_clicks=0),
-            # dbc.Collapse(
-            #     search_bar,
-            #     id="navbar-collapse",
-            #     is_open=False,
-            #     navbar=True,
-            # ),
         ]
     ),
     color="primary",
@@ -159,52 +144,31 @@ footer = html.Footer(
             [
                 dbc.Col(
                     html.A(
-                        "By Michael Toohig",
+                        "Made by Michael Toohig",
                         style={"color": "white", "text-decoration": "underline"},
                         href="https://michaeltoohig.github.io",
                     ),
                 ),
                 dbc.Col(
                     html.Div(
-                        [
-                            html.H6("Made in Vanuatu", className="text-dark"),
-                            html.Img(
-                                src="/assets/vu_flag_bg.gif",
-                                height="20px",
-                                className="ms-2 mt-1",
-                            ),
-                        ],
-                        className="text-end d-flex flex-row justify-content-end",
+                        # [
+                        #     html.H6("Made in Vanuatu", className="text-dark"),
+                        #     html.Img(
+                        #         src="/assets/vu_flag_bg.gif",
+                        #         height="20px",
+                        #         className="ms-2 mt-1",
+                        #     ),
+                        # ],
+                        # className="text-end d-flex flex-row justify-content-end",
                     ),
                 ),
-                # dbc.Col(
-                #     html.Div(
-                #         [
-                #             dbc.Button("Block button", color="primary"),
-                #             dbc.Button("Block button", color="secondary"),
-                #         ],
-                #         className="d-grid gap-2 d-md-block",
-                #     )
-                # ),
             ],
-            className="mx-5",
+            className="mx-1 mx-md-5",
             justify="around",
         )
     ],
     className="bg-primary py-5 mt-5",
 )
-
-
-# add callback for toggling the collapse on small screens
-# @app.callback(
-#     Output("navbar-collapse", "is_open"),
-#     [Input("navbar-toggler", "n_clicks")],
-#     [State("navbar-collapse", "is_open")],
-# )
-# def toggle_navbar_collapse(n, is_open):
-#     if n:
-#         return not is_open
-#     return is_open
 
 
 fig_controls = dbc.Card(
@@ -289,6 +253,15 @@ app.layout = html.Div(
                 dbc.Row(
                     [
                         dcc.Graph(id="graph2", figure=fig2),
+                    ]
+                ),
+                html.P(
+                    "This chart shows the electricity price change compared to the month before."
+                ),
+                # html.Hr(),
+                dbc.Row(
+                    [
+                        dcc.Graph(id="graph3", figure=fig3),
                     ]
                 ),
             ]
@@ -384,6 +357,21 @@ def update_figure2_tariff(tariff):
         secondary_y=True,
     )
     return fig2
+
+
+
+@app.callback(
+    Output("graph3", "figure"),
+    [
+        Input("tariff-select", "value"),
+    ],
+)
+def update_figure2_tariff(tariff):
+    unelco_rates["diff"] = unelco_rates[tariff].diff()
+    figure = px.bar(unelco_rates, x="date", y="diff", labels=["tariff"])
+    figure.update_layout(yaxis_title=f"{tariff.replace('_', ' ').title()} Change (Vatu)")
+    return figure
+
 
 
 if __name__ == "__main__":
