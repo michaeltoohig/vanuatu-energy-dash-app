@@ -3,7 +3,7 @@ import random
 from dash import register_page, html, page_registry
 import dash_bootstrap_components as dbc
 import pandas as pd
-from config import TITLE, DESCRIPTION
+from config import TITLE, DESCRIPTION, SOURCE_LABELS
 
 
 register_page(__name__, path="/", top_nav=False)
@@ -17,8 +17,7 @@ df = pd.read_csv("data/ura-market-snapshots.csv", thousands=",")
 df = df.loc[df["date"] == df["date"].max()]
 renewable = 0
 fossil = 0
-SOURCES = ["diesel", "copra oil", "hydro", "solar", "wind"]
-for source in SOURCES:
+for source in SOURCE_LABELS:
     subtotal = df.loc[df["source"] == source]["kwh"].sum()
     if source == "diesel":
         fossil = subtotal

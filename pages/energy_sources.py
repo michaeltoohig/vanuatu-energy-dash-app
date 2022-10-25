@@ -1,6 +1,7 @@
 from dash import html, dcc, Input, Output, callback, register_page
 import dash_bootstrap_components as dbc
 import plotly.graph_objects as go
+import plotly.express as px
 import pandas as pd
 
 from config import SOURCE_COLORS, SOURCE_LABELS
@@ -57,7 +58,7 @@ def build_line_chart(location: str = "Vanuatu"):
     return figure
 
 
-def build_pie_chart(location, date):
+def build_pie_chart(location: str, date):
     data = df.query(f"date=='{date}'")
     if location != "Vanuatu":
         data = data.query(f"location=='{location}'")
@@ -76,12 +77,36 @@ def build_pie_chart(location, date):
     return figure
 
 
-def build_renewable_percent_chart(location):
-    pass
+def build_renewable_percent_chart(location: str = "Vanuatu"):
+    values = []
+    for date in DATES:
+        renewable = 0
+        nonrenewable = 0
+        if location != "Vanuatu":
+            data = df.query(f"date=='{date}' & location=='{location}'")
+        else:
+            data = df.query(f"date=='{date}'")
+        for source in SOURCE_LABELS:
+            subtotal = data.loc[data["source"] == source]["kwh"].sum()
+            if source == "diesel":
+                nonrenewable = subtotal
+            else:
+                renewable += subtotal
+        total_production = renewable + nonrenewable
+        renewable_percent = renewable / total_production
+        values.append((date, renewable_percent))
+    
+    renewable_df = pd.DataFrame(values, columns=["date", "percent"])
+    figure = px.area(renewable_df, x="date", y="percent")
+    figure.update_layout(yaxis_title="Percent Renewable Energy Produced")
+    figure.update_yaxes(range=[0, 1])
+    figure.for_each_trace(lambda trace: trace.update(fillcolor = SOURCE_COLORS[1]))
+    figure.for_each_trace(lambda trace: trace.line.update(color = SOURCE_COLORS[2]))
+    return figure
 
 
 figure = build_line_chart()
-# figure2 = build_renewable_percent_chart()
+figure2 = build_renewable_percent_chart()
 
 # ------
 # Layout
@@ -129,12 +154,18 @@ layout = html.Div(
                 dcc.Graph(id="graph", figure=figure),
             ]
         ),
+        dbc.Row(
+            [
+                dcc.Graph(id="graphA", figure=figure2),
+            ]
+        ),
     ]
 )
 
 
 @callback(
     Output("graph", "figure"),
+    Output("graphA", "figure"),
     [
         Input("location-select", "value"),
         Input("date-select", "value"),
@@ -143,6 +174,8 @@ layout = html.Div(
 def update_figure_location(location, date):
     if date is None:
         fig = build_line_chart(location)
+        fig2 = build_renewable_percent_chart(location)
     else:
         fig = build_pie_chart(location, date)
-    return fig
+        fig2 = build_renewable_percent_chart(location)
+    return fig, fig2
