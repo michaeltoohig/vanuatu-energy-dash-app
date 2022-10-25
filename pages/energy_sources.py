@@ -72,10 +72,16 @@ def build_pie_chart(location, date):
             )
         ]
     )
+    figure.update_layout(legend=dict(groupclick="toggleitem"))
     return figure
 
 
+def build_renewable_percent_chart(location):
+    pass
+
+
 figure = build_line_chart()
+# figure2 = build_renewable_percent_chart()
 
 # ------
 # Layout

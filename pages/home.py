@@ -1,4 +1,5 @@
 from datetime import datetime
+import random
 from dash import register_page, html, page_registry
 import dash_bootstrap_components as dbc
 import pandas as pd
@@ -56,8 +57,9 @@ hero = html.Div(
     ),
     className="p-3 mb-3 bg-light rounded-3",
     style={
-        "background-image": 'linear-gradient(180deg, rgba(248,249,250,1) 50%, rgba(107,143,113,0.75) 90%), url("https://picsum.photos/400")',
+        "background-image": f'linear-gradient(180deg, rgba(248,249,250,1) 50%, rgba(107,143,113,0.75) 90%), url("/assets/bg{random.randint(1,3)}.jpg")',
         "background-size": "cover",
+        "background-position": "center",
     },
 )
 

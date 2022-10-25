@@ -118,18 +118,18 @@ layout = html.Div(
     [
         html.H2("Electricity Prices"),
         notice,
-        html.P(
-            "This chart shows the consumer kilowatt/hour price against the price of oil so the relationship between them can be compared."
-        ),
         dbc.Row([dbc.Col(figure_controls)]),
+        # html.P(
+        #     "This chart shows the consumer kWh price against the price of oil (converted to Vatu) so the relationship between them can be compared."
+        # ),
         dbc.Row(
             [
                 dcc.Graph(id="graph2", figure=figure),
             ]
         ),
-        html.P(
-            "This chart shows the electricity price change compared to the month before."
-        ),
+        # html.P(
+        #     "This chart shows the change in the electricity tariff rate compared to the month before it."
+        # ),
         dbc.Row(
             [
                 dcc.Graph(id="graph3", figure=figure2),
