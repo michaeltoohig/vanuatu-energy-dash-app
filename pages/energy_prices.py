@@ -14,7 +14,7 @@ register_page(__name__, top_nav=True)
 # -----
 
 unelco_rates = pd.read_csv("data/electricity.csv")
-oil_prices = pd.read_csv("data/crudoil-wti.csv")
+oil_prices = pd.read_csv("data/crude-oil-wti.csv")
 # Update date value to remove day from date
 oil_prices["date"] = oil_prices["date"].str.replace("-15", "")
 exchange_rates = pd.read_csv("data/exchange-rates/monthly.csv")

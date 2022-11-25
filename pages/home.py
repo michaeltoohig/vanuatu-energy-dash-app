@@ -30,7 +30,7 @@ total_production = renewable + fossil
 renewable_percent = renewable / total_production
 
 # WTI
-wti_data = pd.read_csv("data/crudoil-wti.csv")
+wti_data = pd.read_csv("data/crude-oil-wti.csv")
 latest_wti_update = datetime.strptime(wti_data["date"].max(), "%Y-%m-%d")
 
 hero = html.Div(
@@ -146,13 +146,18 @@ def data_source_card(company, image, description, latest_update):
 data_sources_section = html.Div(
     [
         html.H2("Data Sources", className=""),
+        html.P("Our sources are all publicly available reports which we parse and organize into useful formats for displaying on this website. But some of the data sources are inconsistent with their reporting schedules so our app may contain old data for that reason. All of the original source material is available on our Github page."),
+        dbc.Button("View Raw Data", href="https://github.com/michaeltoohig/vanuatu-energy-dash-app/tree/master/data", outline=True, color="primary", size="lg", className="my-0 mb-3"),
         dbc.Row(
             [
                 dbc.Col(
                     data_source_card(
                         "URA",
                         "ura-logo.png",
-                        "We use the Utilities Regulatory Authority's electricity affordability reports for tracking the amount and sources of electricity production around Vanuatu.",
+                        """
+                            We use the Utilities Regulatory Authority's electricity affordability reports for tracking the amount of electricity produced by sources around Vanuatu.
+                            Historically these reports were released each month.
+                        """,
                         latest_ura_update,
                     ),
                 ),
@@ -160,7 +165,11 @@ data_sources_section = html.Div(
                     data_source_card(
                         "Unelco",
                         "unelco-logo.png",
-                        "We use Unelco's electricity tariff reports to gather data about electricity rates each month. Although this is only in the Port Vila area.",
+                        """
+                            We use Unelco's electricity tariff reports to gather data about electricity rates each month.
+                            Although this is only for the Port Vila area.
+                            These reports are released each month usually with a one or two week delay.
+                        """,
                         latest_unelco_update,
                     ),
                 ),
@@ -168,7 +177,11 @@ data_sources_section = html.Div(
                     data_source_card(
                         "Oil Prices",
                         "oil-logo.png",
-                        "We use the WTI oil spot prices each month as a substitute for local oil prices as we have not been able to collect that data ourselves yet. We convert the prices from USD to Vatu by their respective date.",
+                        """
+                            We use the WTI oil spot prices each month as a substitute for local oil prices as we have not been able to collect that data ourselves yet.
+                            We convert the prices from USD to Vatu by their respective date.
+                            These values are available with a one month delay.
+                        """,
                         latest_wti_update,
                     ),
                 ),
