@@ -116,29 +116,31 @@ controls = dbc.Card(
     [
         html.Div(
             [
-                dbc.Label("Location"),
+                html.H6("Location", className="text-white my-1"),
                 dcc.Dropdown(
                     id="location-select",
                     options=LOCATIONS,
                     value="Vanuatu",
                     clearable=False,
                 ),
-            ]
+            ],
+            className="mb-3"
         ),
         html.Div(
             [
-                dbc.Label("Date"),
+                html.H6("Date", className="text-white mb-0"),
+                html.P("Select date to view pie chart for selected date.", className="small text-white mb-1"),
                 dcc.Dropdown(
                     id="date-select",
                     options=list(reversed(DATES)),
                     value=None,
                     clearable=True,
                 ),
-                html.P("Select date to view pie chart"),
-            ]
+            ],
         ),
     ],
     body=True,
+    color="primary",
 )
 
 
@@ -148,11 +150,29 @@ layout = html.Div(
         html.P(
             "This chart shows the amount of kilowatts/hours produced by each reported source of energy."
         ),
-        dbc.Row([dbc.Col(controls)]),
+        controls,
+        html.Div(
+            [
+                html.H4("Total Production by Energy Source"),
+                html.P(
+                    "This chart shows amount electricity produced (measured in kwh) as well as the amount that various energy sources contribute to that demand so the relationship between them can be compared."
+                ),
+            ],
+            className="mt-3 mb-0",
+        ),
         dbc.Row(
             [
                 dcc.Graph(id="graph", figure=figure),
             ]
+        ),
+        html.Div(
+            [
+                html.H4("Renewable Energy Production"),
+                html.P(
+                    "This chart shows percentage of electricity produced with renewable sources."
+                ),
+            ],
+            className="mt-3 mb-0",
         ),
         dbc.Row(
             [
