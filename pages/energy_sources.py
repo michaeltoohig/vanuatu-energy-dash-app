@@ -148,7 +148,10 @@ layout = html.Div(
     [
         html.H2("Energy Sources"),
         html.P(
-            "This chart shows the amount of kilowatts/hours produced by each reported source of energy."
+            """
+                This chart shows the amount of kilowatt/hours produced by each reported source of energy.
+                Use the form below to update the charts and show the data of a specific region and/or date.
+            """
         ),
         controls,
         html.Div(
