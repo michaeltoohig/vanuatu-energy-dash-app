@@ -1,9 +1,24 @@
+from dataclasses import dataclass, asdict
 from enum import Enum
 import re
 import csv
 from pathlib import Path
 from typing import List
 from PyPDF2 import PdfFileReader
+
+
+@dataclass(init=True, frozen=True)
+class TariffInformation:
+    date: str
+    base_rate: float
+    domestic_first_rate: float
+    domestic_second_rate: float
+    domestic_third_rate: float
+    business_rate: float
+    sports_rate: float
+    public_rate: float
+    low_voltage_rate: float
+    high_voltage_rate: float
 
 
 class TariffCategory(Enum):
@@ -69,13 +84,24 @@ if __name__ == "__main__":
         except ValueError:
             print(f"-- Failed {path.name}")
         reports.append(
-            {
-                "date": path.stem.strip(),
+            TariffInformation(
+                date=path.stem.strip(),
                 **data,
-            }
+            )
         )
-    with open("electricity.csv", "w") as csvfile:
-        writer = csv.DictWriter(csvfile, fieldnames=list(reports[0].keys()))
+    for path in Path("data/unelco-tariff-reports").glob("*.csv"):
+        print(f"Opening {path.name}")
+        with path.open("r") as f:
+            reader = csv.DictReader(f)
+            data = {k: float(v) for k, v in next(reader).items()}
+        reports.append(
+            TariffInformation(
+                date=path.stem.strip(),
+                **data,
+            )
+        )
+    with open("data/electricity.csv", "w") as csvfile:
+        writer = csv.DictWriter(csvfile, fieldnames=list(asdict(reports[0]).keys()))
         writer.writeheader()
-        for report in sorted(reports, key=lambda i: i.get("date")):
-            writer.writerow(report)
+        for report in sorted(reports, key=lambda i: i.date):
+            writer.writerow(asdict(report))
