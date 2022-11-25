@@ -86,7 +86,8 @@ figure_controls = dbc.Card(
     [
         html.Div(
             [
-                dbc.Label("Tariff Rate"),
+                html.H6("Tariff Category Select", className="mb-0 text-white"),
+                html.P("Select which tariff category is shown in the charts below.", className="small mb-1 text-white"),
                 dcc.Dropdown(
                     id="tariff-select",
                     options=[
@@ -95,10 +96,12 @@ figure_controls = dbc.Card(
                     value="base_rate",
                     clearable=False,
                 ),
-            ]
-        )
+            ],
+        ),
     ],
     body=True,
+    color="primary",
+    className=""
 )
 
 notice = dbc.Alert(
@@ -118,18 +121,25 @@ layout = html.Div(
     [
         html.H2("Electricity Prices"),
         notice,
-        dbc.Row([dbc.Col(figure_controls)]),
-        # html.P(
-        #     "This chart shows the consumer kWh price against the price of oil (converted to Vatu) so the relationship between them can be compared."
-        # ),
+        figure_controls,
+        html.Div(
+            [
+                html.H4("Port Vila Electricity & Fuel Price"),
+                html.P(
+                    "This chart shows the price of electricity in Port Vila (measured in Vatu/kwh) against the price of oil (converted to Vatu/barrel) so the relationship between them can be compared."
+                ),
+            ],
+            className="mt-3 mb-0",
+        ),
         dbc.Row(
             [
                 dcc.Graph(id="graph2", figure=figure),
-            ]
+            ],
         ),
-        # html.P(
-        #     "This chart shows the change in the electricity tariff rate compared to the month before it."
-        # ),
+        html.H4("Electricity Price Change Per Month"),
+        html.P(
+            "This chart shows the amount of change (measured in Vatu) in the electricity tariff rate compared to the month before it. Effectively showing how much the electricity price changes each month"
+        ),
         dbc.Row(
             [
                 dcc.Graph(id="graph3", figure=figure2),
