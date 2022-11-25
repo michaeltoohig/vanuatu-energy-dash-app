@@ -8,7 +8,10 @@ All data from publicly available sources.
 TODO:
 - Scrape Unelco's electricity costs breakdowns per month
 - Automate fetching WTI records
+ 
 - Add slider for viewing pie chart of energy sources over time
+
+- Write new post about multipage dash app setup
 
 Stretch Ideas:
 - Enter an electricity usage figure and calculate amount at different times in history
