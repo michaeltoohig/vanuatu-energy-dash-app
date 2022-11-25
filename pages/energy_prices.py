@@ -101,7 +101,6 @@ figure_controls = dbc.Card(
     ],
     body=True,
     color="primary",
-    className=""
 )
 
 notice = dbc.Alert(
