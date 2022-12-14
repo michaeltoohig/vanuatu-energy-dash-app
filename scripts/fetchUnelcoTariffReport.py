@@ -1,6 +1,6 @@
 """
 Fetch Unelco's latest electricity tariff report.
-Unelco will also provide via email upon request.
+Unelco will also provide via email upon request (not any longer).
 """
 # TODO
 
