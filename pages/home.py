@@ -4,34 +4,22 @@ from dash import register_page, html, page_registry
 import dash_bootstrap_components as dbc
 import pandas as pd
 from config import TITLE, DESCRIPTION, SOURCE_LABELS
+from utils import get_latest_ura_update, get_latest_wti_update, get_unelco_data, get_latest_unelco_update, get_latest_ura_renewable_percent
 
 
 register_page(__name__, path="/", top_nav=False)
 
 # Unelco
-unelco_rates = pd.read_csv("data/electricity.csv")
-latest_unelco_update = datetime.strptime(unelco_rates.iloc[-1]["date"], "%Y-%m")
-current_rate = unelco_rates.iloc[-1]["base_rate"]
+unelco_data = get_unelco_data()
+latest_unelco_update = get_latest_unelco_update()
+current_rate = unelco_data.iloc[-1]["base_rate"]
 
 # URA
-df = pd.read_csv("data/ura-market-snapshots.csv", thousands=",")
-latest_ura_update = datetime.strptime(df["date"].max(), "%Y-%m")
-
-df = df.loc[df["date"] == df["date"].max()]
-renewable = 0
-fossil = 0
-for source in SOURCE_LABELS:
-    subtotal = df.loc[df["source"] == source]["kwh"].sum()
-    if source == "diesel":
-        fossil = subtotal
-    else:
-        renewable += subtotal
-total_production = renewable + fossil
-renewable_percent = renewable / total_production
+latest_ura_update = get_latest_ura_update()
+renewable_percent, total_production = get_latest_ura_renewable_percent()
 
 # WTI
-wti_data = pd.read_csv("data/crude-oil-wti.csv")
-latest_wti_update = datetime.strptime(wti_data["date"].max(), "%Y-%m-%d")
+latest_wti_update = get_latest_wti_update()
 
 hero = html.Div(
     dbc.Container(
@@ -42,20 +30,11 @@ hero = html.Div(
                 className="lead",
             ),
             html.Hr(className="my-2"),
-            html.P("Explore the following pages."),
-            html.Div(
-                [
-                    dbc.Button(
-                        page["name"].title(),
-                        color="primary",
-                        size="lg",
-                        href=page["path"],
-                        className="me-2",
-                    )
-                    for page in page_registry.values()
-                    if page["top_nav"] == True
-                ],
-                className="lead",
+            html.P("All sources come from public information."),
+            dbc.Button(
+                "Learn More",
+                color="primary",
+                href="/about",
             ),
         ],
         fluid=True,
@@ -119,90 +98,29 @@ quick_stats_section = html.Div(
     ],
 )
 
-
-def data_source_card(company, image, description, latest_update):
-    return dbc.Card(
-        [
-            dbc.CardImg(src=f"/assets/{image}", top=True),
-            dbc.CardBody(
-                [
-                    html.H4(company, className="card-title"),
-                    html.P(description, className="small"),
-                    html.P(
-                        f"Latest update {latest_update.strftime('%B %Y')}",
-                        className="small my-0",
-                    ),
-                ],
-                className="px-3 py-1",
-            ),
-        ],
-        style={
-            "max-width": "400px",
-        },
-        className="mx-auto",
-    )
-
-
-data_sources_section = html.Div(
-    [
-        html.H2("Data Sources", className=""),
-        html.P("Our sources are all publicly available reports which we parse and organize into useful formats for displaying on this website. But some of the data sources are inconsistent with their reporting schedules so our app may contain old data for that reason. All of the original source material is available on our Github page."),
-        dbc.Button("View Raw Data", href="https://github.com/michaeltoohig/vanuatu-energy-dash-app/tree/master/data", outline=True, color="primary", size="lg", className="my-0 mb-3"),
-        dbc.Row(
-            [
-                dbc.Col(
-                    data_source_card(
-                        "URA",
-                        "ura-logo.png",
-                        """
-                            We use the Utilities Regulatory Authority's electricity affordability reports for tracking the amount of electricity produced by sources around Vanuatu.
-                            Historically these reports were released each month.
-                        """,
-                        latest_ura_update,
-                    ),
-                ),
-                dbc.Col(
-                    data_source_card(
-                        "Unelco",
-                        "unelco-logo.png",
-                        """
-                            We use Unelco's electricity tariff reports to gather data about electricity rates each month.
-                            Although this is only for the Port Vila area.
-                            These reports are released each month usually with a one or two week delay.
-                        """,
-                        latest_unelco_update,
-                    ),
-                ),
-                dbc.Col(
-                    data_source_card(
-                        "Oil Prices",
-                        "oil-logo.png",
-                        """
-                            We use the WTI oil spot prices each month as a substitute for local oil prices as we have not been able to collect that data ourselves yet.
-                            We convert the prices from USD to Vatu by their respective date.
-                            These values are available with a one month delay.
-                        """,
-                        latest_wti_update,
-                    ),
-                ),
-            ]
-        ),
-    ],
-    # style={
-    #     "padding-top": "4em",
-    #     "padding-bottom": "4em",
-    #     # "background": "rgb(220,227,91)",
-    #     # "background": "linear-gradient(180deg, rgba(220,227,91,1) 4%, rgba(107,143,113,1) 71%, rgba(81,134,112,1) 100%)",
-    # },
-)
-
-
 layout = html.Div(
     [
         hero,
         quick_stats_section,
         html.Hr(),
-        data_sources_section,
+        html.H2("Explore our pages"),
+        html.Div(
+            [
+                dbc.Button(
+                    page["name"].title(),
+                    color="primary",
+                    outline=True,
+                    size="lg",
+                    href=page["path"],
+                    className="me-2",
+                )
+                for page in page_registry.values()
+                if page["top_nav"] == True
+            ],
+            className="lead",
+        ),
+        # html.Hr(),
+        # data_sources_section,
         # html.H2("Upcoming Service Disruptions"),
         # TODO
         #

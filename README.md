@@ -6,18 +6,18 @@ All data from publicly available sources.
 ## Development Notes
 
 TODO:
-- Flatten specific details to single file to simplify stats and other repeated, calculated figures
-- Add context and more explanations around charts
-  - Project renewable usage to 2030
-  - Explain latest stat date availability figures
-  - Add sources page and links to sources or calculated figures
+- [x] Flatten specific details to single file to simplify stats and other repeated, calculated figures
+- [ ] Add context and more explanations around charts
+  - [ ] Project renewable usage to 2030
+  - [x] Explain latest stat date availability figures
+  - [x] Add sources page and links to sources or calculated figures
 
-- Scrape Unelco's electricity costs breakdowns per month
-- Automate fetching WTI records
+- [ ] Scrape Unelco's electricity costs breakdowns per month
+- [ ] Automate fetching WTI records
  
-- Add slider for viewing pie chart of energy sources over time
+- [ ] Add slider for viewing pie chart of energy sources over time
 
-- Write new post about multipage dash app setup
+- [ ] Write new post about multipage dash app setup
 
 Stretch Ideas:
 - Enter an electricity usage figure and calculate amount at different times in history
