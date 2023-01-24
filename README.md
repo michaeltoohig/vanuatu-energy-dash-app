@@ -13,7 +13,7 @@ TODO:
   - [x] Add sources page and links to sources or calculated figures
 
 - [ ] Scrape Unelco's electricity costs breakdowns per month
-- [ ] Automate fetching WTI records
+- [x] Automate fetching WTI records
  
 - [ ] Add slider for viewing pie chart of energy sources over time
 

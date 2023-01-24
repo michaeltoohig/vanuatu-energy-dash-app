@@ -143,9 +143,29 @@ controls = dbc.Card(
     color="primary",
 )
 
+alert = dbc.Alert(
+    [
+        html.H4("Reports Discontinued(?)", className="alert-heading"),
+        html.P(
+            """
+                The URA has not released a new report since March 2022 and their website
+                has been offline since the Vanuatu government experienced a cyber attack
+                at the end of 2022. So be aware that the charts below are not
+                representative of the current state of energy sources in Vanuatu.
+            """
+        ),
+        html.Hr(),
+        html.P(
+            "Please get into contact with me if you can point me to where to find new reports or why reports have stopped in 2022.",
+            className="mb-0",
+        ),
+    ],
+    color="warning",
+)
 
 layout = html.Div(
     [
+        alert,
         html.H2("Energy Sources"),
         html.P(
             """

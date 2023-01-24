@@ -118,8 +118,8 @@ notice = dbc.Alert(
 
 layout = html.Div(
     [
-        html.H2("Electricity Prices"),
         notice,
+        html.H2("Electricity Prices"),
         figure_controls,
         html.Div(
             [

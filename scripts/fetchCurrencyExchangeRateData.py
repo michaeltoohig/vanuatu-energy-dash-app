@@ -11,7 +11,7 @@ from bs4 import BeautifulSoup
 
 BASE_URL = "https://www.exchangerates.org.uk"
 
-for year in ["2022"]:  #["2017", "2018", "2019", "2020", "2021", "2022"]:
+for year in ["2022", "2023"]:  #["2017", "2018", "2019", "2020", "2021", "2022"]:
     resp = requests.get(f"{BASE_URL}/VUV-USD-spot-exchange-rates-history-{year}.html")
     resp.raise_for_status()
     html = resp.text

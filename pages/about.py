@@ -51,9 +51,11 @@ data_sources_section = html.Div(
                         "URA",
                         "ura-logo.png",
                         """
-                            We use the Utilities Regulatory Authority's electricity affordability reports for tracking the amount of electricity produced by sources around Vanuatu.
-                            Historically these reports were released each month.
-                            Since the latest release in early 2022 there have been no updates for download online, then the URA website has become unaccessible since the Vanuatu government cyber attack took most government services offline in late 2022.
+                            We use the Utilities Regulatory Authority's electricity 
+                            affordability reports for tracking the amount of electricity
+                            produced by various sources across Vanuatu.
+                            These reports are released each month but have been possibly
+                            discontinued or just no longer available online.
                         """,
                         latest_ura_update,
                     ),
@@ -63,7 +65,8 @@ data_sources_section = html.Div(
                         "Unelco",
                         "unelco-logo.png",
                         """
-                            We use Unelco's electricity tariff reports to gather data about electricity rates each month.
+                            We use Unelco's electricity tariff reports to gather data
+                            about electricity rates each month.
                             Although this is only for the Port Vila area.
                             These reports are released each month usually with a one or two week delay.
                         """,
