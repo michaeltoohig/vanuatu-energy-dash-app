@@ -12,7 +12,7 @@ URL = "https://raw.githubusercontent.com/datasets/oil-prices/master/data/wti-mon
 resp = requests.get(URL)
 
 output = csv.writer(
-    Path("data/crude-oil-wti.csv").open("w", newline=""), delimiter=",",
+    Path("app/crude-oil-wti.csv").open("w", newline=""), delimiter=",",
 )
 output.writerow(["date", "price"])
 

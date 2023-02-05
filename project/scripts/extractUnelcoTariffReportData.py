@@ -100,7 +100,7 @@ if __name__ == "__main__":
                 **data,
             )
         )
-    with open("data/electricity.csv", "w") as csvfile:
+    with open("app/electricity.csv", "w") as csvfile:
         writer = csv.DictWriter(csvfile, fieldnames=list(asdict(reports[0]).keys()))
         writer.writeheader()
         for report in sorted(reports, key=lambda i: i.date):

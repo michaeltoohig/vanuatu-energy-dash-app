@@ -5,7 +5,8 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import pandas as pd
 
-from config import SOURCE_COLORS
+from app.config import SOURCE_COLORS
+# from app.utils import get_unelco_data, get_wti_data  # TODO begin using these utils
 
 register_page(__name__, top_nav=True)
 
@@ -13,11 +14,11 @@ register_page(__name__, top_nav=True)
 # Setup
 # -----
 
-unelco_rates = pd.read_csv("data/electricity.csv")
-oil_prices = pd.read_csv("data/crude-oil-wti.csv")
+unelco_rates = pd.read_csv("app/electricity.csv")
+oil_prices = pd.read_csv("app/crude-oil-wti.csv")
 # Update date value to remove day from date
 oil_prices["date"] = oil_prices["date"].str.replace("-15", "")
-exchange_rates = pd.read_csv("data/exchange-rates/monthly.csv")
+exchange_rates = pd.read_csv("app/exchange-rates.csv")
 # Update USD/barrel price to Vatu/barrel price by exchante rate of same month
 oil_prices = pd.concat(
     [

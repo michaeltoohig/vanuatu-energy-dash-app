@@ -9,12 +9,12 @@ from datetime import datetime
 from typing import Tuple
 import pandas as pd
 
-from config import SOURCE_LABELS
+from app.config import SOURCE_LABELS
 
 
 # Unelco Data
 def get_unelco_data() -> pd.DataFrame:
-    return pd.read_csv("data/electricity.csv")
+    return pd.read_csv("app/electricity.csv")
 
 def get_latest_unelco_update() -> datetime:
     unelco_data = get_unelco_data()
@@ -23,7 +23,7 @@ def get_latest_unelco_update() -> datetime:
 
 # URA Data
 def get_ura_data() -> pd.DataFrame:
-    return pd.read_csv("data/ura-market-snapshots.csv", thousands=",")
+    return pd.read_csv("app/ura-market-snapshots.csv", thousands=",")
 
 def get_latest_ura_update() -> datetime:
     ura_data = get_ura_data()
@@ -45,7 +45,7 @@ def get_latest_ura_renewable_percent() -> Tuple[float, int]:
 
 # WTI Data
 def get_wti_data() -> pd.DataFrame:
-    return pd.read_csv("data/crude-oil-wti.csv")
+    return pd.read_csv("app/crude-oil-wti.csv")
 
 def get_latest_wti_update() -> datetime:
     wti_data = get_wti_data()

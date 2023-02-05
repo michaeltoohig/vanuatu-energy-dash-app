@@ -1,7 +1,7 @@
 from dash import register_page, html
 import dash_bootstrap_components as dbc
 
-from utils import get_latest_ura_update, get_latest_wti_update, get_latest_unelco_update
+from app.utils import get_latest_ura_update, get_latest_wti_update, get_latest_unelco_update
 
 
 register_page(__name__, path="/about", top_nav=False)
@@ -43,7 +43,7 @@ data_sources_section = html.Div(
     [
         html.H2("Data Sources", className=""),
         html.P("Our sources are all publicly available reports which we parse and organize into useful formats for displaying on this website. But some of the data sources are inconsistent with their reporting schedules so our app may contain old data for that reason. All of the original source material is available on our Github page."),
-        dbc.Button("View Raw Data", href="https://github.com/michaeltoohig/vanuatu-energy-dash-app/tree/master/data", outline=True, color="primary", size="lg", className="my-0 mb-3"),
+        dbc.Button("View Raw Data", href="https://github.com/michaeltoohig/vanuatu-energy-dash-app", outline=True, color="primary", size="lg", className="my-0 mb-3"),
         dbc.Row(
             [
                 dbc.Col(

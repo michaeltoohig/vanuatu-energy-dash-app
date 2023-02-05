@@ -31,7 +31,7 @@ def main():
         "source",
         "kwh",
     ]
-    with open("ura-market-snapshots.csv", "w") as csvfile:
+    with open("app/ura-market-snapshots.csv", "w") as csvfile:
         csvwriter = csv.DictWriter(csvfile, fieldnames=fieldnames)
         csvwriter.writeheader()
         for d in data:

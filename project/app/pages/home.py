@@ -3,8 +3,8 @@ import random
 from dash import register_page, html, page_registry
 import dash_bootstrap_components as dbc
 import pandas as pd
-from config import TITLE, DESCRIPTION, SOURCE_LABELS
-from utils import get_latest_ura_update, get_latest_wti_update, get_unelco_data, get_latest_unelco_update, get_latest_ura_renewable_percent
+from app.config import TITLE, DESCRIPTION, SOURCE_LABELS
+from app.utils import get_latest_ura_update, get_latest_wti_update, get_unelco_data, get_latest_unelco_update, get_latest_ura_renewable_percent
 
 
 register_page(__name__, path="/", top_nav=False)

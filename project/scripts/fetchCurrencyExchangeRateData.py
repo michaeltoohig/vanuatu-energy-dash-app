@@ -25,8 +25,9 @@ daily = csv.writer(
     Path("data/exchange-rates/daily.csv").open("w", newline=""), delimiter=","
 )
 daily.writerow(["date", "exchange_rate"])
+monthly_file = Path("data/exchange-rates/monthly.csv")
 monthly = csv.writer(
-    Path("data/exchange-rates/monthly.csv").open("w", newline=""), delimiter=","
+    monthly_file.open("w", newline=""), delimiter=","
 )
 monthly.writerow(["date", "exchange_rate"])
 
@@ -46,3 +47,7 @@ for file in sorted(Path("data/exchange-rates").glob("*.html")):
 
 daily.close()
 monthly.close()
+
+# copy monthly data to app - later we should process the exchange rate info in place with the electricity price data rather than doing that work in the app
+tmp_file_for_app = Path("app/exchange-rates.csv")
+shutil.copy(monthly_file, tmp_file_for_app)

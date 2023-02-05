@@ -4,7 +4,7 @@ import plotly.graph_objects as go
 import plotly.express as px
 import pandas as pd
 
-from config import SOURCE_COLORS, SOURCE_LABELS
+from app.config import SOURCE_COLORS, SOURCE_LABELS
 
 
 register_page(__name__, top_nav=True)
@@ -13,7 +13,7 @@ register_page(__name__, top_nav=True)
 # Setup
 # -----
 
-df = pd.read_csv("data/ura-market-snapshots.csv", thousands=",")
+df = pd.read_csv("app/ura-market-snapshots.csv", thousands=",")
 # Update 'Malekula' location to use more accurate location name to match later reports
 df.loc[df["location"] == "Malekula", "location"] = "Malekula- Lakatoro"
 # TODO percent renewable or something by location (map view?) 3D map view?

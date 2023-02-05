@@ -8,7 +8,7 @@ from dash import (
     State,
 )
 import dash_bootstrap_components as dbc
-from config import TITLE, DESCRIPTION
+from app.config import TITLE, DESCRIPTION
 
 
 app = Dash(
@@ -23,8 +23,6 @@ app = Dash(
     use_pages=True,
     external_stylesheets=[dbc.themes.BOOTSTRAP],
 )
-
-# set `server` for Heroku
 server = app.server
 
 navbar = dbc.Navbar(
