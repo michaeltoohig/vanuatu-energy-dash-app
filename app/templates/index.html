@@ -1,13 +1,44 @@
+{% macro quickStatsCard(title, description, latest_update) %}
+<div class="card">
+  <div class="card-body px-3 py-1">
+    <p class="card-text lead mb-0">{{ description }}</p>
+    <h5 class="card-title mb-1">{{ title }}</h5>
+    <p class="small my-0">Latest update {{ latest_update }}</p>
+  </div>
+</div>
+{% endmacro %}
+
 {% extends 'base.html' %}
 {% block styles %}
   {{ super() }}
   {{ styles }}
 {% endblock %}
 {% block content %}
+  <div class="container p-5 mb-3 bg-light rounded-3" style="height: 330px; background-image: linear-gradient(180deg, rgba(248,249,250,1) 50%, rgba(107,143,113,0.75) 90%), url({{ hero_image }}); background-size: cover; background-position: center;">
+    <h1 class="display-3">{{ config.TITLE }}</h1>
+    <hr class="my-2" />
+    <p class="lead">All sources come from public information.</p>
+    <a role="button" class="btn btn-primary btn-lg" href="{{ url_for('about') }}">Learn More</a>
+  </div>
+
   <div class="container pb-5">
     <div class="row justify-content-center">
       <div class="col-auto col-md-10">
-        {{ content }}
+        <h2>Quick Stats</h2>
+        <div class="row mb-3">
+          <div class="col">
+            {{ quickStatsCard("Electricity Base Rate", current_rate, latest_unelco_update) }}
+          </div>
+          <div class="col">
+            {{ quickStatsCard("Total Production", total_production, latest_ura_update) }}
+          </div>
+          <div class="col">
+            {{ quickStatsCard("Electricity Base Rate", renewable_percent, latest_ura_update) }}
+          </div>
+        </div>
+
+        <p class="lead">Browse our other pages for interactive charts and graphs built from publicly available data.</p>
+        <a role="button" class="btn btn-primary" href="{{ url_for('about') }}">View our sources</a>
       </div>
     </div>
   </div>

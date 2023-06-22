@@ -11,6 +11,7 @@ with app.app_context():
     app = prices.init_dash(app)
     app = sources.init_dash(app)
 
+
 if __name__ == "__main__":
     # Only for debugging while developing
     app.run(host="0.0.0.0", debug=True, port=8080)

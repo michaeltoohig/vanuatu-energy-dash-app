@@ -1,0 +1,34 @@
+{% macro dataSourceCard(source) %}
+<div class="card mx-auto" style="max-width: 400px;">
+  <img src="{{ source.image }}" class="card-img-top">
+  <div class="card-body px-3 py-1">
+    <h4 class="card-title">{{ source.title }}</h4>
+    <p class="card-text small">{{ source.description }}</p>
+    <p class="small my-0">Latest update {{ source.latest_update }}</p>
+  </div>
+</div>
+{% endmacro %}
+
+{% extends 'base.html' %}
+{% block styles %}
+  {{ super() }}
+  {{ styles }}
+{% endblock %}
+{% block content %}
+  <div class="container pb-5">
+    <h2 class="">Data Sources</h2>
+    <p>Our sources are all publicly available reports which we parse and organize into useful formats for displaying on this website. But some of the data sources are inconsistent with their reporting schedules so our app may contain old data for that reason. All of the original source material is available on our Github page.</p>
+    <a href="https://github.com/michaeltoohig/vanuatu-energy-dash-app" role="button" class="btn btn-primary btn-outline btn-lg my-0 mb-3">View Raw Data</a>
+    <div class="row">
+      {% for source in sources %}
+      <div class="col">
+        {{ dataSourceCard(source) }}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% include 'partials/footer.html' %}
+{% endblock %}
+{% block scripts %}
+  {{ super() }}
+{% endblock %}

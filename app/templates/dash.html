@@ -5,10 +5,17 @@
 {% endblock %}
 {% block styles %}
   {{ super() }}
+  <style>
+    #dash-main {
+      margin: auto;
+      max-width: 720px;
+      padding: 0 1rem;
+    }
+  </style>
   {{ css }}
 {% endblock %}
 {% block content %}
-  <div style="max-width: 600px">
+  <div id="dash-main">
     {{ app_entry }}
   </div>
 {% endblock %}
