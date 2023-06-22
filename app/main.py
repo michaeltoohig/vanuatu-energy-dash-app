@@ -4,6 +4,9 @@ from flask import Flask
 app = Flask(__name__, instance_relative_config=True)
 app.config.from_object("config.Config")
 
+from .commands import unelco
+app.cli.add_command(unelco.cli)
+
 with app.app_context():
     from . import routes
     from .dash import prices, sources
