@@ -4,8 +4,11 @@ from flask import Flask
 app = Flask(__name__, instance_relative_config=True)
 app.config.from_object("config.Config")
 
-from .commands import unelco
+from .commands import unelco, ura, oil, exchange_rates
 app.cli.add_command(unelco.cli)
+app.cli.add_command(ura.cli)
+app.cli.add_command(oil.cli)
+app.cli.add_command(exchange_rates.cli)
 
 with app.app_context():
     from . import routes

@@ -17,7 +17,7 @@ unelco_rates = pd.read_csv("app/data/electricity.csv")
 oil_prices = pd.read_csv("app/data/crude-oil-wti.csv")
 # Update date value to remove day from date
 oil_prices["date"] = oil_prices["date"].str.replace("-15", "")
-exchange_rates = pd.read_csv("app/data/exchange-rates.csv")
+exchange_rates = pd.read_csv("app/data/exchange-rates/monthly.csv")
 # Update USD/barrel price to Vatu/barrel price by exchante rate of same month
 oil_prices = pd.concat(
     [

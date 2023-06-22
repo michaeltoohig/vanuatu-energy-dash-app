@@ -30,6 +30,7 @@ def fetch():
 @cli.command("extract")
 def extract():
     reports = []
+    # extract information from pdf
     for path in Path("app/data/unelco-tariff-reports").glob("*.pdf"):
         print(f"Opening {path.name}")
         with path.open("rb") as f:
@@ -46,6 +47,7 @@ def extract():
                 **data,
             )
         )
+    # extract information from csv
     for path in Path("app/data/unelco-tariff-reports").glob("*.csv"):
         print(f"Opening {path.name}")
         with path.open("r") as f:
@@ -57,6 +59,7 @@ def extract():
                 **data,
             )
         )
+    # save combined results
     with open("app/data/electricity.csv", "w") as csvfile:
         writer = csv.DictWriter(csvfile, fieldnames=list(asdict(reports[0]).keys()))
         writer.writeheader()
