@@ -8,16 +8,21 @@ All data from publicly available sources.
 Run the project locally via Docker
 
 ```
-docker build -t vanuatu-energy-dashboard project/.
-docker run -p 8050:8050 vanuatu-energy-dashboard
+# TODO
 ```
 
 You can then find the app at http://localhost:8050 on your browser.
 
+Or run the project locally without Docker
+
+```
+flask --app app.main:app run --reload --debug
+```
+
 ## Development Notes
 
 TODO:
-- [ ] Add `manage.py` entry point to Click CLI and organize `scripts` dir into files containing command groups
+- [x] refactor loose scripts directory into Click CLI groups
   - [ ] process exchange rate info outside of app; allow app to have a clean static view of what we want to present
 
 - [x] Flatten specific details to single file to simplify stats and other repeated, calculated figures
@@ -30,8 +35,6 @@ TODO:
 - [x] Automate fetching WTI records
  
 - [ ] Add slider for viewing pie chart of energy sources over time
-
-- [ ] Write new post about multipage dash app setup
 
 
 Stretch Ideas:
