@@ -19,7 +19,7 @@ class Config:
     TEMPLATE_FOLDER = "templates"
 
     TITLE = "Vanuatu Energy Dashboard"
-    DESCRIPTION = "An open source dashboard on Vanuatu's eneregy sources and prices from information obtained in public records."
+    DESCRIPTION = "An open source dashboard on Vanuatu's energy sources and prices from information obtained in public records."
 
     # chart labels and colors for URA market snapshots
     SOURCE_LABELS = ["diesel", "copra oil", "hydro", "solar", "wind"]
